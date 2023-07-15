@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006"
+xmlns:d="http://openoffice.org/extensions/description/2006"
+xmlns:xlink="http://www.w3.org/1999/xlink">
+ 
+  <version value="1.0.0.0" />
+ 
+  <identifier value="org.libreoffice.Office.addon.datalink" />
+  <platform value="all" />
+ 
+  <registration>
+  </registration>
+
+  <display-name>
+    <name lang="en">DataLink Add-in</name>
+	<name lang="ru">Надстройка DataLink</name>
+  </display-name>
+
+  <extension-description>
+		<src xlink:href="pkg-desc/pkg-description.txt" lang="en" />
+		<src xlink:href="pkg-desc/pkg-description.ru.txt" lang="ru" />
+	</extension-description>
+ 
+  <icon>
+    <default xlink:href="images/Logo.png" />
+    <high-contrast xlink:href="images/Logo.png" />
+  </icon>
+ 
+</description>
+

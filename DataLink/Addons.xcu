@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="Addons" oor:package="org.openoffice.Office">
+	<node oor:name="AddonUI">
+		<node oor:name="OfficeToolBar">
+			<node oor:name="DataLinkConnectionSettings.OfficeToolBar.T1" oor:op="replace">
+				<node oor:name="btn1" oor:op="replace">
+					<prop oor:name="Context" oor:type="xs:string">
+						<value>com.sun.star.sheet.SpreadsheetDocument</value>
+					</prop>
+					<prop oor:name="URL" oor:type="xs:string">
+						<value>service:vnd.datalink?connectionsettings</value>
+					</prop>
+					<prop oor:name="ImageIdentifier" oor:type="xs:string">
+						<value>%origin%/images/logo</value>
+					</prop>
+					<prop oor:name="Title" oor:type="xs:string">
+						<value>Run module Connection Settings</value>
+					    <value xml:lang="ru-RU">Запуск модуля Настройки подключений</value>
+					</prop>
+					<prop oor:name="Target" oor:type="xs:string">
+						<value>_self</value>
+					</prop>
+				</node>
+			</node>
+		</node>
+		<node oor:name="Images">
+			<node oor:name="image-datalink-connectionsettings" oor:op="replace">
+				<prop oor:name="URL" oor:type="xs:string">
+					<value>service:vnd.datalink?connectionsettings</value>
+				</prop>
+				<node oor:name="UserDefinedImages">
+					<prop oor:name="ImageSmallURL">
+						<value>%origin%/images/logo_16.bmp</value>
+					</prop>
+					<prop oor:name="ImageBigURL">
+						<value>%origin%/images/logo_24.bmp</value>
+					</prop>
+				</node>
+			</node>
+		</node>
+		<node oor:name="AddonMenu">
+			<node oor:name="DataLinkConnectionSettings.AddonMenu.M1" oor:op="replace">
+				<prop oor:name="Context" oor:type="xs:string">
+					<value>com.sun.star.sheet.SpreadsheetDocument</value>
+				</prop>
+				<prop oor:name="URL" oor:type="xs:string">
+					<value>service:vnd.datalink?connectionsettings</value>
+				</prop>
+				<prop oor:name="Title" oor:type="xs:string">
+					<value>Run module Connection Settings</value>
+					<value xml:lang="ru-RU">Запуск модуля Настройки подключений</value>
+				</prop>
+				<prop oor:name="Target" oor:type="xs:string">
+					<value>_self</value>
+				</prop>
+			</node>
+		</node>
+	</node>
+</oor:component-data>
+
