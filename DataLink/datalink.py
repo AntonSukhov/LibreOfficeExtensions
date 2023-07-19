@@ -1,18 +1,17 @@
-import uno
-import unohelper
-
+import unohelper, modules
 from com.sun.star.task import XJobExecutor
 from services.messageboxservice import MessageBoxService
 
 class DataLink(unohelper.Base, XJobExecutor):
-    implementationName = "vnd.datalink"                  #Имя реализации
+    implementationName = "vnd.datalink"                   #Имя реализации
     serviceNames = ("com.sun.star.task.Job",)             #Список реализованных служб
     
     def __init__(self, context):
         self.context = context
 
     def trigger(self, args):                             #args - имя аргумента, определенное в файле Addons.xcu
-        MessageBoxService.Show("Hello World!!! Args: " + args, "Info" )
+        dialogCreator = modules.DialogCreator(self.context)
+        dialogCreator.CreateConnectionsDialog()
 
 g_ImplementationHelper = unohelper.ImplementationHelper()
 
